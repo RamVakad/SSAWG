@@ -1,0 +1,172 @@
+<slider-menu info="dirScope"></slider-menu>
+<div class="content-wrapper">
+
+    <section class="content-header">
+        <h1 class="page-header">
+            Submit New Pattern
+        </h1>
+        <ol class="breadcrumb">
+            <li><a ng-href="/"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-solid">
+                    <!--
+                    <div class="box-header with-border">
+                        <h3 class="box-title"></h3>
+                    </div>
+                     /.box-header -->
+                    <div class="box-body">
+                        <form role="form" ng-submit="submit()">
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" ng-model="pattern.name"
+                                           placeholder="Enter Name" ng-maxlength="255">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prolog">Prolog</label>
+                                    <textarea type="text" class="form-control" id="prolog" ng-model="pattern.prolog"
+                                              placeholder="Enter Prolog"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="problem">Problem</label>
+                                    <textarea type="text" class="form-control" id="problem" ng-model="pattern.problem"
+                                              placeholder="Enter Problem"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="forces">Forces</label>
+                                    <textarea type="text" class="form-control" id="forces" ng-model="pattern.forces"
+                                              placeholder="Enter Forces"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="solution">Solution</label>
+                                    <textarea type="text" class="form-control" id="solution" ng-model="pattern.solution"
+                                              placeholder="Enter Solution"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="examples">Examples</label>
+                                    <textarea type="text" class="form-control" id="examples" ng-model="pattern.examples"
+                                              placeholder="Examples"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="classification">Classification</label>
+                                    <select class="form-control" id="classification" ng-dropdown required ng-model="pattern.classification">
+                                        <option value=''>Select Classification</option>
+                                        <option>IMPLEMENTATION</option>
+                                        <option>DESIGN</option>
+                                        <option>ARCHITECTURE</option>
+                                        <option>OPERATIONS</option>
+                                        <option>ENGINEERING</option>
+                                        <option>CONFIGURATION</option>
+                                        <option>OTHER</option>
+                                    </select>
+                                    <div ng-show="pattern.classification == 'OTHER'">
+                                        <br >
+                                    <input type="text" class="form-control" id="classificationOther" placeholder=""
+                                           ng-model="pattern.classOther">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="securitydomain">Security Domain</label>
+                                    <select class="form-control" id="securitydomain" ng-dropdown required ng-model="pattern.securityDomain">
+                                        <option value=''>Select Security Domain</option>
+                                        <option>AUTHENTICATION</option>
+                                        <option>AUTHORIZATION</option>
+                                        <option>LOGGING</option>
+                                        <option>INPUT_VALIDATION</option>
+                                        <option>OTHER</option>
+                                    </select>
+                                    <div ng-show="pattern.securityDomain == 'OTHER'">
+                                        <br >
+                                    <input  type="text" class="form-control" id="securityDomainOther" placeholder=""
+                                            ng-model="pattern.securityOther">
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="Category">Category</label>
+                                    <input type="text" class="form-control" id="category" placeholder="Category"
+                                           ng-model="pattern.category">
+                                </div>
+                                <div class=" form-group">
+                                    <label for="languagesSupported">Languages Supported</label>
+                                    <input type="text" class="form-control" id="languagesSupported"
+                                           ng-model="pattern.languages"
+                                           placeholder="Languages Supported">
+                                </div>
+                                <div class="form-group">
+                                    <label for="attachments">Attachments</label>
+                                    <textarea type="text" class="form-control" id="attachments"
+                                              ng-model="pattern.attachmentsTemp" placeholder="Attachments"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="resulting-context">Resulting Context</label>
+                                    <textarea type="text" class="form-control" id="resulting-context"
+                                           ng-model="pattern.resultingContext"
+                                              placeholder="Resulting Context"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="code-repository">Code Repository</label>
+                                    <textarea type="text" class="form-control" id="code-repository"
+                                           ng-model="pattern.codeRepository"
+                                              placeholder="Code Repository"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="how-to-use">How to use</label>
+                                    <textarea type="text" class="form-control" id="how-to-use" ng-model="pattern.howTo"
+                                              placeholder="Enter instructions here"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="threatModel">Threat Model</label>
+                                    <textarea type="text" class="form-control" id="threatModel" ng-model="pattern.threatModel"
+                                              placeholder="Threat Model"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="test-cases">Test Cases</label>
+                                    <textarea type="text" class="form-control" id="test-cases" ng-model="pattern.testCases"
+                                              placeholder="Test Cases"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="test-scripts">Test Scripts</label>
+                                    <textarea type="text" class="form-control" id="test-scripts" ng-model="pattern.testScripts"
+                                              placeholder="Test Scripts"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Attachments</label>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-xs-6" ng-repeat="attachment in pattern.attachments track by $index">
+                                            <div ng-click="removeFile(attachment.id)">{{ attachment.fileName }}</div>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <label for="files" class="btn btn-primary">{{fileUploadMessage}}</label>
+                                    <input id="files" style="visibility:hidden;" type="file" ng-model="attachment"
+                                           onchange="angular.element(this).scope().newFile(this)"
+                                           type="file" accept="*/*">
+
+                                    <p class="help-block">If you want to remove an attached file, just click on it's name.</p>
+                                </div>
+
+                            </div>
+                            <!-- /.box-body -->
+
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </section>
+</div>

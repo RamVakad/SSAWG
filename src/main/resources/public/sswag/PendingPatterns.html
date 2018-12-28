@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>SSAWG | Data Tables</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <!-- Bootstrap 3.3.7 -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/custom.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Google Font -->
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    </head>
+    <body class="hold-transition skin-blue sidebar-mini">
+        <div class="wrapper">
+
+
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="Dashboard.html" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b>S</b></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <span class="logo-lg"><b>SSAWG</b></span>
+                </a>
+                <!-- Header Navbar: style can be found in header.less -->
+                <nav class="navbar navbar-static-top">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- Messages: style can be found in dropdown.less-->
+
+                            <!-- Notifications: style can be found in dropdown.less -->
+
+                            <!-- Tasks: style can be found in dropdown.less -->
+
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user"></i>
+                                    <span class="hidden-xs">User</span>
+                                </a>
+                            </li>
+                            <!-- Control Sidebar Toggle Button -->
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu" data-widget="tree">
+                        <li><a href="Dashboard.html"><i class="fa fa-circle-o text-red"></i> <span>Approved Patterns</span></a></li>
+                        <li class="active"><a href="PendingPatterns.html"><i class="fa fa-circle-o text-yellow"></i> <span>Pending Patterns</span></a></li>
+                        <li><a href="NewPattern.html"><i class="fa fa-circle-o text-aqua"></i> <span>Submit New Patterns</span></a></li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Pending Patterns
+                        <small>advanced tables</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="Dashboard.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Pending Patterns</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box">
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Title</th>
+                                                <th>Created by</th>
+                                                <th>Modified</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Opera 9.5</td>
+                                                <td>Win 88+ / OSX.3+</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree1" name="check">
+                                                        <label for="slideThree1"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Opera for Wii</td>
+                                                <td>Wii</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree2" name="check">
+                                                        <label for="slideThree2"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Nokia N800</td>
+                                                <td>N800</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree3" name="check">
+                                                        <label for="slideThree3"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Nintendo DS browser</td>
+                                                <td>Nintendo DS</td>
+                                                <td>8.5</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree4" name="check">
+                                                        <label for="slideThree4"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Konqureror 3.1</td>
+                                                <td>KDE 3.1</td>
+                                                <td>3.1</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree5" name="check">
+                                                        <label for="slideThree5"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Konqureror 3.3</td>
+                                                <td>KDE 3.3</td>
+                                                <td>3.3</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree6" name="check">
+                                                        <label for="slideThree6"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>Konqureror 3.5</td>
+                                                <td>KDE 3.5</td>
+                                                <td>3.5</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree7" name="check">
+                                                        <label for="slideThree7"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>Internet Explorer 4.5</td>
+                                                <td>Mac OS 8-9</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree8" name="check">
+                                                        <label for="slideThree8"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Internet Explorer 5.1</td>
+                                                <td>Mac OS 7.6-9</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree9" name="check">
+                                                        <label for="slideThree9"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>Internet Explorer 5.2</td>
+                                                <td>Mac OS 8-X</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree10" name="check">
+                                                        <label for="slideThree10"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td>NetFront 3.1</td>
+                                                <td>Embedded devices</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree11" name="check">
+                                                        <label for="slideThree11"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>NetFront 3.4</td>
+                                                <td>Embedded devices</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree12" name="check">
+                                                        <label for="slideThree12"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td>Dillo 0.8</td>
+                                                <td>Embedded devices</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree13" name="check">
+                                                        <label for="slideThree13"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>14</td>
+                                                <td>Links</td>
+                                                <td>Text only</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree14" name="check">
+                                                        <label for="slideThree14"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>15</td>
+                                                <td>Lynx</td>
+                                                <td>Text only</td>
+                                                <td>-</td>
+                                                <td>X</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16</td>
+                                                <td>IE Mobile</td>
+                                                <td>Windows Mobile 6</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree15" name="check">
+                                                        <label for="slideThree15"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>17</td>
+                                                <td>PSP browser</td>
+                                                <td>PSP</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree16" name="check">
+                                                        <label for="slideThree16"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>18</td>
+                                                <td>All others</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <div class="slideThree">
+                                                        <input class="spl" type="checkbox" value="1" id="slideThree17" name="check">
+                                                        <label for="slideThree17"></label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Title</th>
+                                                <th>Created by</th>
+                                                <th>Modified</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <!-- /.box-body -->
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+
+                </div>
+                <strong>Copyright &copy; 2017.</strong> All rights reserved.
+            </footer>
+
+            <!-- /.control-sidebar -->
+            <!-- Add the sidebar's background. This div must be placed
+                 immediately after the control sidebar -->
+            <div class="control-sidebar-bg"></div>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 3 -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap 3.3.7 -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- SlimScroll -->
+        <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="bower_components/fastclick/lib/fastclick.js"></script>
+        <!-- AdminLTE App -->
+        <script src="dist/js/adminlte.min.js"></script>
+    </body>
+</html>

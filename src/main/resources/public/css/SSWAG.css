@@ -1,0 +1,85 @@
+
+.Login-Page {
+    background: #ecf0f5;
+}
+
+.Absolute-Center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+    width: 50%;
+    height: 50%;
+    min-width: 200px;
+    max-width: 400px;
+    padding: 40px;
+    background-color:#3c8dbc;
+}
+
+.Login-Logo {
+    width:100%;
+    height:15%;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.Login-Faws-Padding {
+    color:#fff;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+.Login-Message {
+    color:#fff;
+    display:block;
+    margin:auto;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.Login-Button {
+    background-color:#367fa9;
+    border:none;
+}
+
+.Login-Support {
+    color:#f8f9fa;
+}
+
+.Login-Support a {
+    color:#fff;
+}
+
+.Login-Message.ng-enter {
+    -webkit-animation: FadeIn 1.2s;
+    -moz-animation: FadeIn 1.2s;
+    -ms-animation: FadeIn 1.2s;
+    -o-animation: FadeIn 1.2s;
+    animation: FadeIn 1.2s;
+}
+
+.Login-Message.ng-leave {
+    -webkit-animation: FadeOut 1.2s;
+    -moz-animation: FadeOut 1.2s;
+    -ms-animation: FadeOut 1.2s;
+    -o-animation: FadeOut 1.2s;
+    animation: FadeOut 1.2s;
+}
+
+
+@keyframes FadeIn { from { opacity: 0; } }
+@-moz-keyframes FadeIn { from { opacity: 0; } }
+@-webkit-keyframes FadeIn { from { opacity: 0; } }
+@-ms-keyframes FadeIn { from { opacity: 0; } }
+@-o-keyframes FadeIn { from { opacity: 0; } }
+
+
+@keyframes FadeOut { to { opacity: 0; } }
+@-moz-keyframes FadeOut { to { opacity: 0; } }
+@-webkit-keyframes FadeOut { to { opacity: 0; } }
+@-ms-keyframes FadeOut { to { opacity: 0; } }
+@-o-keyframes FadeOut { to { opacity: 0; } }
